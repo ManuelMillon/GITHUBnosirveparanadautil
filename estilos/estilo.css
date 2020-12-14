@@ -15,7 +15,7 @@
 .iframe-responsive {position: relative;
                     overflow: hidden;
                     width: 100%;
-                    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */}
+                    padding-top: 56.25%; 
 .iframe-content {position: absolute;
                  top: 0;
                  left: 0;
@@ -31,41 +31,39 @@ section::after {
   clear: both;
   margin: auto;
 }
-/* Add a black background color to the top navigation */
 
 
 body {background-color: rgb( 252, 250, 252);
       color: black;
       font-family:eltexto;}
 
-#container {width:80%;  /* este será el ancho de todas las secciones */
+#container {width:80%;  
             margin:auto;}
 
 a {text-decoration:none;
    color:lightblue;
   }
-a:hover{color:palegreen;}   /* Cuando pases el cursor por encima del enlace, cambia de color, sin pinchar*/
+a:hover{color:palegreen;}   
+button {cursor: pointer;}   
 
-button {cursor: pointer;}   /* El cursor se convierte en una mano */
-
-#funcionamiento {width:89%;  /* este será el ancho de todas las secciones */
+#funcionamiento {width:89%;  
                  margin:auto;}
 
-#about {width:81%;  /* este será el ancho de todas las secciones */
+#about {width:81%;  
         margin:auto;}
 
-#tipos {width:80%;  /* este será el ancho de todas las secciones */
+#tipos {width:80%;  
         margin:auto;}
 
 
 /* Para que la barra de navegación se mueva */
 nav{ position: sticky;
-     position:-webkit-sticky;/*https://www.codingnepalweb.com/2020/04/responsive-menu-bar-in-html-css.html  COMO SEGUNRA QUE NO SALE, EMPLEA MEJOR ESTE ENLACE*/
-     position:fixed;                    /*https://codepen.io* ESTA WEB TIENE COSAS CHULÍSIMAS PARA LA BARRA DE NAVEGACIÓN. pUEDES PONER ACCORDION*/
+     position:-webkit-sticky;/
+     position:fixed;                    
       z-index: 99; 
       top:0px;
       width: 80%;
-}                                    /* Tendrás que jugar con el ancho para que encaje perfectamente con la imagen. */
+}                                   /
   
 
 .topnav {
@@ -102,8 +100,8 @@ nav{ position: sticky;
     display: none;
   }
 
-  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 1000px) {   /* Tengo que probar la medida de responsabilidad jugando con el número de pixeles para que los enlaces de la barra de inicio se hagan hamburguesa */
+ 
+@media screen and (max-width: 1000px) {   
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -111,8 +109,8 @@ nav{ position: sticky;
     }
   }
   
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 1000px) {     /* Tengo que probar la medida de responsabilidad jugando con el número de pixeles para que los enlaces de la barra de inicio se hagan hamburguesa */
+  
+  @media screen and (max-width: 1000px) {     
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
       position: absolute;
@@ -130,12 +128,12 @@ nav{ position: sticky;
     background-image:url('../imagenes/cabeceradefinitiva.jpg');
     background-size: cover;
     background-position: right;
-    height: 30vh; /* el alto en función de la pantalla del visitante */
+    height: 30vh; 
     }
 
-    #hero h2 {position:absolute;      /* el título debe posicionarse sobre */
-              top:20px;               /* la foto y quedar bien contrastado:*/
-              left:15px;              /* tipografia, color, contraste, y posicionamiento */
+    #hero h2 {position:absolute;   
+              top:20px;               
+              left:15px;              
               color: yellow;
               font-family:rotulo;
               font-size:2.5em;
@@ -199,7 +197,7 @@ nav{ position: sticky;
                      border-radius: 3px 0 0 3px;
                    }
                    
-                   /* On hover, add a black background color with a little bit see-through */
+
                    .prev:hover, .next:hover {
                      background-color: rgba(0,0,0,0.8);
                    }
@@ -261,7 +259,7 @@ nav{ position: sticky;
 
   .grid2col {display: block;
              margin: auto;
-             display:grid;  /* propiedad de estilo para distribución grid */
+             display:grid;  
              grid-template-columns:50%  50%;
          }
     
@@ -307,18 +305,18 @@ button:hover {background-color: lightgrey;}
                 
                 .grid4col {grid-template-columns: 50% 50%;}
          }
-         @media only screen and (max-width:600px){ /* tamaño de móvil */
+         @media only screen and (max-width:600px){ 
                 #container {width:100%;}
                 #wallpaperTinta {width:100%;}
                 #intro p {text-align:left;
                           width:80%;}
-                .grid2col{grid-template-columns: 100%;} /* modificar el grid al 100 */
+                .grid2col{grid-template-columns: 100%;} 
                 
                 .grid4col {grid-template-columns: 100%;}
-                /* .grid2col {display:block;} alternativa a lo de arriba */
+               
                 
          
-                /****** RESPONSIVIDAD A 3 Y 4 COLUMNAS *********/
+               
          }
 
          footer .fa {
